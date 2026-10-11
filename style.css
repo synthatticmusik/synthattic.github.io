@@ -157,3 +157,8 @@ footer .wordmark{font-size:16px}
 
 /* V8: preserve original photography and add approved new images; no layout redesign. */
 .photo-grid{grid-auto-flow:row dense}
+
+/* V10: logo trial and precise requested label removals */
+.hero-logo{display:block;width:100%;max-width:1320px;height:auto;max-height:245px;object-fit:contain;object-position:left center;filter:none;margin:36px 0 28px}
+.intro-strip{grid-template-columns:1.5fr .8fr}
+@media(max-width:760px){.hero-logo{max-height:none;width:100%;margin:38px 0 27px}.intro-strip{grid-template-columns:1fr auto}}
