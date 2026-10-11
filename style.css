@@ -122,3 +122,27 @@ footer .wordmark{font-size:16px}
  .spotify-player{margin-top:14px}
  footer{gap:12px}
 }
+
+/* Current refinement: more integrated platform links, restrained spacing, no decorative arrows. */
+.platform-bar{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:0;padding:18px 4.8% 20px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.platform-bar a{display:flex;align-items:center;min-height:48px;padding:0 13px;font-family:var(--sans);font-size:clamp(12px,1.1vw,15px);font-weight:600;letter-spacing:-.035em;text-transform:none;border-bottom:0;border-right:1px solid var(--line);transition:background .2s,color .2s}
+.platform-bar a:first-child{padding-left:0}
+.platform-bar a:last-child{border-right:0}
+.platform-bar a:hover{background:transparent;color:#77766f;text-decoration:underline;text-underline-offset:5px}
+.release-art.diy-art{aspect-ratio:1/1;display:flex;flex-direction:column;justify-content:space-between;padding:7%;color:#1b1b18;background:#e8e5dc;border:1px solid #1b1b18;position:relative;overflow:hidden}
+.diy-art:before,.diy-art:after{content:"";position:absolute;left:7%;right:7%;height:1px;background:#1b1b18}
+.diy-art:before{top:19%}.diy-art:after{bottom:19%}
+.diy-art .diy-small,.diy-art .diy-bottom{font:clamp(7px,.65vw,10px) var(--mono);letter-spacing:.08em;z-index:1}
+.diy-art strong{font-size:clamp(42px,5.2vw,82px);font-weight:800;letter-spacing:-.1em;line-height:1;align-self:center;z-index:1}
+.diy-art .diy-bottom{text-align:right}
+/* Keep the established design; reduce the generic, overly uniform section rhythm slightly. */
+.section-heading{margin-bottom:30px}
+@media(max-width:760px){
+ .platform-bar{grid-template-columns:repeat(2,minmax(0,1fr));padding:10px 5%}
+ .platform-bar a{min-height:43px;font-size:12px;padding:0 9px;border-bottom:1px solid var(--line)}
+ .platform-bar a:nth-child(odd){padding-left:0}
+ .platform-bar a:nth-child(even){border-right:0}
+ .platform-bar a:last-child{border-bottom:0}
+ .diy-art strong{font-size:42px}
+ .diy-art .diy-small,.diy-art .diy-bottom{font-size:7px}
+}
