@@ -162,3 +162,10 @@ footer .wordmark{font-size:16px}
 .hero-logo{display:block;width:100%;max-width:1320px;height:auto;max-height:245px;object-fit:contain;object-position:left center;filter:none;margin:36px 0 28px}
 .intro-strip{grid-template-columns:1.5fr .8fr}
 @media(max-width:760px){.hero-logo{max-height:none;width:100%;margin:38px 0 27px}.intro-strip{grid-template-columns:1fr auto}}
+
+/* V11: keep the existing editorial video layout; one silent looping event teaser hints at the full listening-party edit. */
+.video-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.video-feature{position:relative;min-width:0}
+.video-feature .listening-party-video{display:block;width:100%;height:clamp(220px,28vw,420px);object-fit:cover;background:#171715}
+.video-feature .video-loop-hint{position:absolute;right:12px;top:12px;width:28%;height:26%;object-fit:cover;border:2px solid var(--paper);box-shadow:0 4px 20px #0003;background:#171715;pointer-events:none}
+@media(max-width:760px){.video-grid{grid-template-columns:1fr}.video-feature .listening-party-video{height:65vw;max-height:460px}.video-feature .video-loop-hint{width:31%;height:25%;right:9px;top:9px}}
