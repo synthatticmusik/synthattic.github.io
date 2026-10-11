@@ -23,3 +23,102 @@
 .music-feature span{display:block;font:10px var(--mono);color:#77766f;margin-bottom:12px}
 .music-feature strong{font-size:clamp(35px,5vw,62px);font-weight:600;letter-spacing:-.07em;display:flex;justify-content:space-between}
 @media(max-width:760px){.hero-image{height:92vw;min-height:320px}.video-section{padding-top:60px;padding-bottom:60px}.video-grid{grid-template-columns:1fr}.video-grid video{height:65vw;max-height:460px}.music-section{padding:60px 5% 65px}.music-inner{grid-template-columns:1fr;gap:30px}.music-section h2{font-size:72px}.music-links a{font-size:16px}}
+
+/* Refined pass: keep the approved bright-editorial layout; remove template-like flourishes. */
+:root{--paper:#f5f4ef;--ink:#191916;--muted:#77766f;--line:#d5d4cc;--accent:#d8ff35;--mono:'DM Mono',monospace;--sans:'Manrope',Arial,sans-serif}
+.topline{height:34px;letter-spacing:.025em}
+.site-header{height:76px}
+.wordmark{font-size:21px;letter-spacing:-.075em}
+.site-header nav{gap:29px;margin-left:40px}
+.site-header nav a,.header-cta{font-size:12px}
+.header-cta{border-radius:2px;padding:10px 13px}
+.header-cta span{display:none}
+.hero{padding-top:32px}
+.hero-meta{gap:20px;letter-spacing:.035em}
+.hero h1{font-size:clamp(76px,15.1vw,218px);line-height:.79;letter-spacing:-.105em;font-weight:600;margin:49px 0 26px;max-width:none;white-space:nowrap}
+.hero-bottom{margin-bottom:28px;align-items:center}
+.hero-bottom p{font-size:13px;line-height:1.55}
+.hero-index{font:9px var(--mono);letter-spacing:.06em;color:var(--muted)}
+.hero-portrait{height:min(64vw,710px)}
+.hero-portrait img{object-position:center 50%!important}
+.intro-strip{padding:24px 0 26px;grid-template-columns:.85fr 1.5fr .8fr;gap:16px}
+.intro-strip p{font-size:17px;letter-spacing:-.035em}
+.intro-strip>a{letter-spacing:.025em}
+.platform-bar{gap:clamp(14px,2.7vw,34px);padding-top:17px;padding-bottom:17px}
+.platform-bar a{font-size:9px;letter-spacing:.025em}
+.moving-archive{padding-top:17px}
+.archive-track{gap:10px;animation-duration:58s}
+.archive-track img{filter:saturate(.72)}
+.moments{padding-top:88px;padding-bottom:82px}
+.section-heading{margin-bottom:34px}
+.section-heading h2,.credits h2{letter-spacing:-.075em}
+.photo-grid{gap:10px}
+.about{padding-top:68px;padding-bottom:85px;gap:6vw}
+.about h2{font-size:clamp(42px,5.6vw,70px);letter-spacing:-.075em;margin-bottom:25px}
+.about-copy .about-lead{font-size:18px;line-height:1.6;letter-spacing:-.025em}
+.about-copy p{font-size:13px;line-height:1.8}
+.credits{padding-top:66px;padding-bottom:78px;gap:6vw}
+.credits h2{font-size:clamp(42px,4.8vw,64px);line-height:.96;margin-top:17px}
+.credits-note{max-width:300px;line-height:1.65}
+.names span{font-size:13px;padding:13px 0}
+.press{padding-top:68px;padding-bottom:72px}
+.press h2{font-size:clamp(54px,6.8vw,88px);letter-spacing:-.08em;line-height:.96}
+.press-links>a{padding:16px 0}
+.press-links strong{font-size:17px;letter-spacing:-.035em}
+.press-links strong b{display:none}
+footer{padding-top:22px;padding-bottom:22px}
+footer .wordmark{font-size:16px}
+
+/* Featured release: a real listening destination, not a stack of generic link buttons. */
+.music-section{padding-top:68px;padding-bottom:72px}
+.music-inner{gap:6vw}
+.music-section h2{font-size:clamp(54px,7vw,92px);letter-spacing:-.08em;line-height:.94;margin:20px 0}
+.music-section p{line-height:1.65}
+.music-links{border-top:0}
+.featured-release{display:grid;grid-template-columns:minmax(120px,.72fr) 1fr;gap:20px;align-items:center;padding:0 0 20px;border-bottom:1px solid #c9c8bf}
+.release-art{aspect-ratio:1/1;overflow:hidden;background:#d4d0c8}
+.release-art img{width:100%;height:100%;display:block;object-fit:cover;filter:saturate(.78)}
+.release-copy{min-width:0}
+.release-kicker{font:9px var(--mono);letter-spacing:.045em;color:#77766f}
+.release-copy h3{font-size:clamp(27px,3vw,42px);line-height:1;letter-spacing:-.07em;font-weight:600;margin:13px 0 6px}
+.release-copy p{font-size:11px;margin:0 0 18px;color:#68675f}
+.release-link{display:inline-block;font-size:11px;border-bottom:1px solid #77766f;padding:0 0 5px}
+.spotify-player{display:block;border:0;border-radius:8px;margin:16px 0 8px}
+.music-links>a:not(.music-feature){font-size:14px;padding:13px 0;letter-spacing:-.02em}
+@media(max-width:760px){
+ .topline{height:31px}
+ .site-header{height:66px}
+ .site-header nav{gap:13px;margin-left:auto}
+ .site-header nav a{font-size:10px}
+ .hero{padding-top:25px}
+ .hero-meta{gap:10px}
+ .hero h1{font-size:clamp(49px,14.3vw,108px);margin:43px 0 21px;letter-spacing:-.105em}
+ .hero-bottom{margin-bottom:22px;gap:12px}
+ .hero-bottom p{font-size:11px}
+ .hero-index{font-size:7px;text-align:right}
+ .hero-portrait{height:105vw;min-height:300px;max-height:580px}
+ .intro-strip{grid-template-columns:1fr auto;padding:20px 0;gap:10px}
+ .intro-strip .eyebrow{grid-column:1/-1}
+ .intro-strip p{font-size:15px}
+ .intro-strip>a{font-size:8px}
+ .platform-bar{gap:12px 18px}
+ .platform-bar a{font-size:8px}
+ .moments{padding-top:64px;padding-bottom:60px}
+ .section-heading h2{font-size:59px}
+ .photo-grid{gap:8px}
+ .about{padding-top:52px;padding-bottom:62px;gap:24px}
+ .about h2{font-size:45px}
+ .about-copy .about-lead{font-size:17px}
+ .credits{padding-top:50px;padding-bottom:58px;gap:22px}
+ .credits h2{font-size:52px}
+ .names span{font-size:11px;padding:12px 0}
+ .press{padding-top:52px;padding-bottom:56px}
+ .press h2{font-size:62px}
+ .music-section{padding:52px 5% 58px}
+ .music-inner{grid-template-columns:1fr;gap:25px}
+ .music-section h2{font-size:64px}
+ .featured-release{grid-template-columns:115px 1fr;gap:16px}
+ .release-copy h3{font-size:31px}
+ .spotify-player{margin-top:14px}
+ footer{gap:12px}
+}
