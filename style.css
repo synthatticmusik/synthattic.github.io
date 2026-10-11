@@ -257,3 +257,20 @@ img, video, iframe { max-width:100%; }
 @media (prefers-reduced-motion:reduce) {
   .archive-track { animation:none; }
 }
+
+/* v23: mobile gallery crop fix — remove oversized two-row tiles on phones only. */
+@media (max-width:760px) {
+  .photo-grid {
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+    grid-template-rows:none;
+    grid-auto-rows:clamp(150px,43vw,210px);
+    align-items:stretch;
+  }
+  .tile-large { grid-column:1 / -1; grid-row:auto; }
+  .tile-small, .tile-portrait, .tile-wide, .tile-tall {
+    grid-column:auto;
+    grid-row:auto;
+    min-height:0;
+  }
+  .tile-portrait img, .tile-tall img { object-position:center center; }
+}
