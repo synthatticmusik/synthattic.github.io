@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <rect width="1000" height="1000" fill="#e8e5dc"/>
+  <rect x="38" y="38" width="924" height="924" fill="none" stroke="#1b1b18" stroke-width="2"/>
+  <path d="M70 190H930M70 810H930" stroke="#1b1b18" stroke-width="2"/>
+  <text x="72" y="145" font-family="Arial,sans-serif" font-size="26" letter-spacing="5" fill="#1b1b18">SYNTHATTIC</text>
+  <text x="928" y="145" font-family="monospace" font-size="22" text-anchor="end" fill="#1b1b18">ZYNC RECORDS</text>
+  <text x="500" y="555" font-family="Arial,sans-serif" font-size="260" font-weight="800" letter-spacing="-20" text-anchor="middle" fill="#1b1b18">D.I.Y</text>
+  <text x="72" y="865" font-family="monospace" font-size="24" letter-spacing="4" fill="#1b1b18">A COLLECTION OF SOUNDS</text>
+  <text x="928" y="865" font-family="monospace" font-size="24" text-anchor="end" fill="#1b1b18">2025 / LP</text>
+</svg>
