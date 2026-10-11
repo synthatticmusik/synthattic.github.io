@@ -171,3 +171,23 @@ footer .wordmark{font-size:16px}
 /* Single continuous montage: preserve the full frame without awkward cropping. */
 .video-grid video:only-child{grid-column:1/-1;width:100%;height:auto;aspect-ratio:16/9;max-height:720px;object-fit:contain;background:#171715}
 @media(max-width:760px){.video-grid video:only-child{height:auto;aspect-ratio:16/9;max-height:none;object-fit:contain}}
+
+/* v21: gently improve readability of secondary and descriptive copy without changing the visual hierarchy */
+.hero-bottom p{font-size:14px}
+.section-heading>p{font-size:14px}
+.about-copy p{font-size:14px}
+.credits-note{font-size:13px}
+.names span{font-size:14px}
+.press-inner>div:first-child>p{font-size:14px}
+.music-section p{font-size:14px}
+.release-copy p{font-size:12px}
+@media(max-width:760px){
+  .hero-bottom p{font-size:12px}
+  .section-heading>p{font-size:13px}
+  .about-copy p{font-size:14px}
+  .credits-note{font-size:13px}
+  .names span{font-size:12px}
+  .press-inner>div:first-child>p{font-size:14px}
+  .music-section p{font-size:14px}
+  .release-copy p{font-size:12px}
+}
