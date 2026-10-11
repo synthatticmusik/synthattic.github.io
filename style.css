@@ -191,3 +191,69 @@ footer .wordmark{font-size:16px}
   .music-section p{font-size:14px}
   .release-copy p{font-size:12px}
 }
+
+
+/* v22: mobile-first finishing pass. Desktop design remains unchanged. */
+html, body { max-width:100%; overflow-x:clip; }
+img, video, iframe { max-width:100%; }
+.site-header nav a, .header-cta, .platform-bar a, .press-links>a { -webkit-tap-highlight-color: transparent; }
+@media (min-width:761px) and (max-width:1024px) {
+  .site-header { padding-left:4%; padding-right:4%; }
+  .site-header nav { gap:18px; margin-left:24px; }
+  .hero h1 { font-size:clamp(74px,14vw,145px); }
+  .photo-grid { grid-template-rows:clamp(210px,27vw,280px) clamp(190px,23vw,240px) clamp(180px,21vw,220px); }
+  .video-grid { gap:9px; }
+  .video-grid video { height:clamp(190px,27vw,300px); }
+  .music-inner { grid-template-columns:.85fr 1.15fr; gap:4vw; }
+}
+@media (max-width:760px) {
+  body { overflow-x:clip; }
+  .topline { padding-left:5%; padding-right:5%; gap:10px; }
+  .topline a { text-align:right; }
+  .site-header { padding-left:5%; padding-right:5%; gap:12px; }
+  .wordmark { font-size:clamp(16px,4.8vw,19px); }
+  .site-header nav { gap:clamp(9px,2.8vw,14px); min-width:0; }
+  .site-header nav a { font-size:clamp(9px,2.5vw,10px); white-space:nowrap; }
+  .hero-logo { max-width:100%; height:auto; }
+  .hero h1 { max-width:100%; white-space:normal; overflow-wrap:anywhere; font-size:clamp(48px,13.8vw,92px); }
+  .hero-bottom { align-items:flex-start; }
+  .hero-bottom p { max-width:72%; }
+  .hero-index { max-width:28%; }
+  .hero-portrait { width:100%; }
+  .intro-strip p { line-height:1.55; }
+  .intro-strip>a { white-space:nowrap; }
+  .platform-bar a { min-width:0; overflow-wrap:anywhere; }
+  .archive-track { will-change:transform; }
+  .moments, .video-section { min-width:0; }
+  .section-heading h2 { max-width:100%; font-size:clamp(45px,12.5vw,59px); }
+  .photo-grid { grid-template-columns:minmax(0,1fr) minmax(0,1fr); grid-template-rows:clamp(175px,58vw,230px) clamp(145px,48vw,190px) clamp(185px,62vw,240px) clamp(145px,48vw,190px); }
+  .tile img { min-width:0; }
+  .tile figcaption { font-size:8px; line-height:1.3; }
+  .video-grid { grid-template-columns:minmax(0,1fr); gap:16px; }
+  .video-grid video { width:100%; height:auto; aspect-ratio:16 / 10; max-height:none; object-fit:contain; }
+  .music-inner, .press-inner { min-width:0; }
+  .music-section h2 { font-size:clamp(52px,14vw,64px); }
+  .featured-release { grid-template-columns:minmax(90px,32%) minmax(0,1fr); }
+  .release-copy h3 { font-size:clamp(25px,7.5vw,31px); }
+  .spotify-player { width:100%; max-width:100%; }
+  .about-copy p { overflow-wrap:anywhere; }
+  .names { grid-template-columns:minmax(0,1fr) minmax(0,1fr); column-gap:12px; }
+  .names span:nth-child(odd) { margin-right:0; }
+  .press-links strong { gap:10px; }
+  footer { row-gap:14px; }
+}
+@media (max-width:380px) {
+  .topline { font-size:7px; }
+  .site-header { gap:8px; }
+  .wordmark { font-size:15px; }
+  .site-header nav { gap:8px; }
+  .site-header nav a { font-size:9px; }
+  .hero h1 { font-size:clamp(44px,13vw,52px); }
+  .intro-strip { grid-template-columns:minmax(0,1fr); }
+  .intro-strip>a { justify-self:start; }
+  .platform-bar a { font-size:11px; }
+  .names span { font-size:11px; }
+}
+@media (prefers-reduced-motion:reduce) {
+  .archive-track { animation:none; }
+}
