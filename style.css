@@ -167,3 +167,7 @@ footer .wordmark{font-size:16px}
 .video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
 .video-grid video{display:block;width:100%;height:clamp(220px,28vw,420px);object-fit:cover;background:#171715}
 @media(max-width:760px){.video-grid{grid-template-columns:1fr}.video-grid video{height:65vw;max-height:460px}}
+
+/* Single continuous montage: preserve the full frame without awkward cropping. */
+.video-grid video:only-child{grid-column:1/-1;width:100%;height:auto;aspect-ratio:16/9;max-height:720px;object-fit:contain;background:#171715}
+@media(max-width:760px){.video-grid video:only-child{height:auto;aspect-ratio:16/9;max-height:none;object-fit:contain}}
